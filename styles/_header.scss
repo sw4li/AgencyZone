@@ -1,0 +1,73 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+
+    .uk-flex {
+        @include respond-above(sm) {
+            height: 70px
+        }
+
+        @include respond-above(xl) {
+            height: 148px
+        }
+    }
+
+    .logo {
+
+        transform: translateY(-25px);
+
+        @include respond-below(sm) {
+            max-width: 70px;
+            transform: translateY(-20px);
+        }
+
+        @include respond-above(sm) {
+            max-width: 120px;
+        }
+
+        @include respond-above(xl) {
+            max-width: 210px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .navbar {
+        ul {
+            li {
+                margin: 0 10px;
+
+                @include respond-above(xl) {
+                    margin: 0 20px;
+                }
+
+               
+
+                a {
+                    font-size: 12px;
+                    color: white;
+                    transition:color .5s ease;
+
+                    &:hover{
+                        color:$secondary-color;
+                    }
+
+                    @include respond-above(xl) {
+                        font-size: 15px;
+
+                    }
+                }
+            }
+
+            @include respond-above(sm) {
+                display: flex;
+            }
+        }
+    }
+
+}

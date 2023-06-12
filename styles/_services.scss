@@ -1,0 +1,36 @@
+
+.icon-info-section {
+    margin-top: 80px;
+
+    @include respond-above(xl) {
+        margin-top: 100px;
+    }
+
+    .uk-grid-column-large{
+        margin:auto
+    }
+
+    .icon-info-column {
+        .icon {
+            width: 65px;
+            height: 65px;
+            background-color: rgba($secondary-color, .05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 18px;
+
+            @include respond-above(xl) {
+                width: 85px;
+                height: 85px;
+            }
+        }
+
+        .info {
+            max-width: 332px;
+            margin-top: 18px; 
+        }
+    }
+
+}

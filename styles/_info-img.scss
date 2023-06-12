@@ -1,0 +1,44 @@
+.info-img-section {
+    margin: 60px 0;
+
+    @include respond-above(sm) {
+        margin: 120px 0;
+    }
+
+    @include respond-above(sm) {
+
+        .uk-grid-column-large {
+            margin: auto;
+        }
+    }
+
+
+    .uk-flex-row-reverse {
+        img {
+
+            @include respond-above(sm) {
+                transform: translateX(80px);
+            }
+        }
+    }
+
+    img {
+        @include respond-above(sm) {
+            transform: translateX(-130px);
+        }
+    }
+
+    .info {
+        max-width: 500px;
+
+        @include respond-above(xl) {
+            max-width: 552px;
+        }
+
+        p + p{
+            margin-bottom: 30px;
+        }
+
+    }
+
+}
